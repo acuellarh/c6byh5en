@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes      # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby      # gem 'therubyracer', platforms: :ruby
+# Gem CORS provides support for Cross-Origin Resource Sharing (CORS) for Rack compatible web applications
+gem 'rack-cors'  
 
 gem 'jquery-rails'
   # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks     # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -32,4 +34,5 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring        # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
