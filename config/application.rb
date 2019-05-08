@@ -8,8 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Products
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -24,14 +23,6 @@ module Products
     # config.i18n.default_locale = :de
     config.api_only = true
 
-    # Rails 5, para habilitar peticiones desde un front externo a rails
-
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options]
-      end
-    end
 
   end
 end
